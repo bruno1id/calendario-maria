@@ -105,8 +105,25 @@ figure{max-width:100%!important}
 }
 @media (max-width:520px){.hv{height:420px}.hp{top:70px}.hp .z{zoom:.5}.cover{width:236px}}
 </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1851006962983048');
+fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1851006962983048&ev=PageView&noscript=1"
+/></noscript>
 <div style="width: 100%; font-family: 'Nunito Sans', sans-serif; color: #2A2F3A; background: #FBF7EF; overflow: hidden">
 
 <!-- SEÇÃO 1 · HERO -->
@@ -412,6 +429,17 @@ var PRAZO = '2026-11-30T23:59:59-03:00';
   atualizar();
   setInterval(atualizar, 1000);
 })();
+</script>
+<script>
+// Meta Pixel: registra InitiateCheckout ao clicar nos botões de pagamento
+document.querySelectorAll('a[href*="pay.kiwify.com.br"]').forEach(function (a) {
+  a.addEventListener('click', function () {
+    if (window.fbq) fbq('track', 'InitiateCheckout', {
+      value: a.href.indexOf('cs4Cybm') > -1 ? 27.90 : 19.90,
+      currency: 'BRL'
+    });
+  });
+});
 </script>
 </body>
 </html>
