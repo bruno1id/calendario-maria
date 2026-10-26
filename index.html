@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calendário de Maria 2027 | Ponto da Fé</title>
+<meta name="description" content="Viva 2027 inteirinho ao lado de Nossa Senhora: 12 meses ilustrados, orações, festas marianas e espaço para suas intenções. PDF para imprimir.">
+<meta property="og:title" content="Calendário de Maria 2027">
+<meta property="og:description" content="Um ano inteiro na companhia de Nossa Senhora. PDF pronto para imprimir.">
+<meta property="og:image" content="imagens/capa-calendario.webp">
+<style>html{scroll-behavior:smooth}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&amp;family=Nunito+Sans:wght@400;600;700;800&amp;family=Pinyon+Script&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FBF7EF}
+a{color:#1F3A5F}a:hover{color:#16294A}
+*{box-sizing:border-box}
+.wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 20px}
+.narrow{max-width:720px;margin:0 auto}
+.eyebrow{font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#7A5A23}
+.h2{font-family:'Cormorant Garamond',serif;font-weight:700;color:#1F3A5F;font-size:clamp(32px,4.6vw,48px);line-height:1.08;margin:0;text-align:center}
+.lead{font-size:clamp(17px,2vw,19px);line-height:1.6;color:#2A2F3A;margin:0}
+.orn{display:flex;justify-content:center;align-items:center;gap:12px;color:#B08A3E}
+.orn i{display:block;width:56px;height:1px;background:#C9A962}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 34px;border-radius:999px;background:#15803D;color:#FFFFFF;font-weight:800;font-size:17px;letter-spacing:.02em;text-decoration:none;box-shadow:0 10px 24px rgba(21,128,61,.32);transition:transform .18s ease,box-shadow .18s ease,background .18s ease;animation:pulso 2.4s ease-in-out infinite;cursor:pointer}
+.btn:hover{background:#116932;color:#FFFFFF;transform:translateY(-3px) scale(1.03);box-shadow:0 16px 32px rgba(21,128,61,.40);animation-play-state:paused}
+.btn:active{transform:scale(.97);box-shadow:0 6px 14px rgba(21,128,61,.30)}
+.btn:focus-visible{outline:3px solid #B08A3E;outline-offset:3px}
+.btn::after{content:"\2192";transition:transform .18s ease}
+.btn:hover::after{transform:translateX(4px)}
+@keyframes pulso{0%,100%{box-shadow:0 10px 24px rgba(21,128,61,.32),0 0 0 0 rgba(21,128,61,.35)}50%{box-shadow:0 10px 24px rgba(21,128,61,.32),0 0 0 12px rgba(21,128,61,0)}}
+@media (prefers-reduced-motion:reduce){.btn{animation:none;transition:none}}
+.pg{width:300px;background:#FFFDF9;border:1px solid #D8C08A;outline:3px double #D8C08A;outline-offset:-9px;padding:24px 20px 18px;text-align:center;box-shadow:0 18px 40px rgba(31,58,95,.14);font-family:'Nunito Sans',sans-serif;flex:none}
+.pg-top{font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#7A5A23}
+.pg-mes{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:38px;line-height:1;color:#1F3A5F;margin-top:4px}
+.pg-mes span{font-weight:600;color:#7A5A23}
+.pg-inv{font-size:11px;color:#2A2F3A;margin-top:4px}
+.pg-art{display:flex;justify-content:center;margin:6px 0 6px}
+.cal{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));border-left:1px solid #EADFCB}
+.wd{background:#1F3A5F;color:#FFFFFF;font-size:8.5px;font-weight:800;padding:4px 0;letter-spacing:.06em}
+.c{font-family:'Cormorant Garamond',serif;font-size:14px;font-weight:700;color:#2A2F3A;height:22px;line-height:22px;border-right:1px solid #EADFCB;border-bottom:1px solid #EADFCB}
+.c.sun{color:#2B4C7E}
+.c.hl{background:#1F3A5F;color:#FFFFFF}
+.pg-boxes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:10px}
+.bx{border:1px solid #D8C08A;border-radius:4px;padding:5px 4px;font-size:8px;line-height:1.3;color:#2A2F3A}
+.bx b{display:block;font-family:'Cormorant Garamond',serif;font-size:11px;color:#1F3A5F;margin-bottom:2px}
+.pg-foot{margin-top:9px;font-family:'Pinyon Script',cursive;font-size:15px;color:#1F3A5F}
+.dv-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:8px;text-align:left}
+.dv-grid .bx{font-size:8px;padding:6px}
+.ln{height:11px;border-bottom:1px solid #E3D6BF}
+.chk{display:flex;gap:4px;align-items:center;margin-top:2px}
+.chk i{display:block;width:7px;height:7px;border:1px solid #B08A3E;flex:none}
+.hv{position:relative;max-width:620px;height:470px;margin:0 auto}
+.hp{position:absolute;top:56px}
+.hp .z{zoom:.62}
+.hp-l{left:0;transform:rotate(-7deg)}
+.hp-r{right:0;transform:rotate(7deg)}
+.cover{position:relative;z-index:2;width:270px;margin:0 auto;padding:30px 22px 24px}
+.icon-row{display:flex;gap:16px;align-items:flex-start;padding:16px 18px;background:#FFFDF9;border:1px solid #EADFCB;border-radius:14px}
+.icon-dot{width:44px;height:44px;border-radius:50%;background:#E3EAF3;display:flex;align-items:center;justify-content:center;flex:none;color:#1F3A5F}
+.check{display:flex;gap:14px;align-items:flex-start}
+.check-ic{width:30px;height:30px;border-radius:50%;background:#1F3A5F;color:#FFFFFF;display:flex;align-items:center;justify-content:center;flex:none;margin-top:2px}
+.card{background:#FFFDF9;border:1px solid #EADFCB;border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:14px}
+.card-art{background:#F2ECE0;border-radius:12px;display:flex;align-items:center;justify-content:center;padding:14px}
+.card h3{font-family:'Cormorant Garamond',serif;font-size:25px;line-height:1.15;color:#1F3A5F;margin:0}
+.card p{margin:0;font-size:16px;line-height:1.55;color:#2A2F3A}
+.bonus-tag{align-self:flex-start;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#FFFFFF;background:#1F3A5F;border-radius:999px;padding:6px 12px}
+.ph{border:2px dashed #C9A962;border-radius:16px;min-height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:20px;text-align:center;color:#5B6170;font-size:15px;line-height:1.5;background:#FFFDF9}
+.cd{display:flex;gap:10px;justify-content:center}
+.cd div{min-width:68px;background:#1F3A5F;color:#FFFFFF;border-radius:12px;padding:10px 6px;text-align:center}
+.cd b{display:block;font-family:'Cormorant Garamond',serif;font-size:32px;line-height:1}
+.cd span{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.plan{background:#FFFDF9;border:1px solid #EADFCB;border-radius:22px;padding:28px 24px;display:flex;flex-direction:column;gap:16px;position:relative}
+.plan.top{border:2px solid #1F3A5F;box-shadow:0 22px 50px rgba(31,58,95,.18)}
+.plan h3{font-family:'Cormorant Garamond',serif;font-size:32px;color:#1F3A5F;margin:0;line-height:1}
+.plan ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.plan li{display:flex;gap:10px;align-items:flex-start;font-size:16px;line-height:1.45;color:#2A2F3A}
+.plan li svg{flex:none;margin-top:3px}
+.old{font-size:16px;color:#5B6170;text-decoration:line-through}
+.price{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:56px;line-height:1;color:#1F3A5F}
+.save{align-self:flex-start;background:#E7EFE8;color:#3F5A45;font-weight:800;font-size:14px;border-radius:999px;padding:6px 12px}
+.badge{position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:#B08A3E;color:#14233A;font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;border-radius:999px;padding:8px 16px;white-space:nowrap}
+.small{font-size:14px;color:#5B6170;text-align:center}
+.viva{filter:saturate(1.4) contrast(1.06)}
+.hero3d{transform:perspective(1400px) rotateX(9deg) rotateY(-7deg);transform-origin:center;filter:saturate(1.4) contrast(1.06) drop-shadow(0 34px 38px rgba(31,58,95,.30))}
+.p3d{filter:saturate(1.4) contrast(1.06) drop-shadow(0 26px 30px rgba(31,58,95,.28));border-radius:6px}
+.p3d-l{transform:perspective(1200px) rotateY(18deg) rotateX(3deg)}
+.p3d-c{transform:perspective(1200px) rotateX(6deg) scale(1.04)}
+.p3d-r{transform:perspective(1200px) rotateY(-18deg) rotateX(3deg)}
+@media (max-width:620px){.p3d-l,.p3d-r{transform:perspective(1200px) rotateX(5deg)}}
+@media (max-width:620px){
+section:not(.s1){padding-top:52px!important;padding-bottom:52px!important}
+.s1{padding-bottom:52px!important}
+.wrap{padding:0 16px}
+.btn{width:100%;max-width:420px;padding:12px 22px;font-size:16px;text-align:center;line-height:1.3}
+.card{padding:18px}
+.plan{padding:26px 18px}
+.price{font-size:48px}
+.cd{gap:8px}.cd div{min-width:0;flex:1 1 0}.cd b{font-size:28px}
+.icon-row{padding:14px;gap:12px}
+.icon-row p{font-size:16px!important}
+.hero3d{transform:perspective(1000px) rotateX(6deg)}
+.p3d-c{transform:perspective(1200px) rotateX(4deg)}
+figure{max-width:100%!important}
+}
+@media (max-width:520px){.hv{height:420px}.hp{top:70px}.hp .z{zoom:.5}.cover{width:236px}}
+</style>
+</head>
+<body>
+<div style="width: 100%; font-family: 'Nunito Sans', sans-serif; color: #2A2F3A; background: #FBF7EF; overflow: hidden">
+
+<!-- SEÇÃO 1 · HERO -->
+<section class="s1" style="padding: 0 0 72px; background: #FBF7EF">
+<a href="#ofertas" style="display: block; margin: 0 0 48px; background: #B91C1C; color: #FFFFFF; text-decoration: none; text-align: center; padding: 9px 16px; font-weight: 700; font-size: 12px; letter-spacing: .14em; text-transform: uppercase"><span id="faixa">⚡ Oferta especial</span></a>
+<div class="wrap" style="display: flex; flex-direction: column; align-items: center; gap: 22px; text-align: center">
+<div class="eyebrow">Calendário de Maria 2027 · para imprimir</div>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: clamp(40px, 6.4vw, 72px); line-height: 1.02; color: #1F3A5F; max-width: 860px">Viva 2027 inteirinho ao lado de Nossa Senhora</h1>
+<p class="lead" style="max-width: 640px">Doze meses ilustrados, cada um com uma invocação de Maria, orações, as festas marianas do ano e um espaço só seu para as suas intenções.</p>
+
+<img class="hero3d" src="imagens/capa-calendario.webp" alt="Capa do Calendário de Maria 2027 com páginas dos meses e páginas devocionais" style="display: block; width: 100%; max-width: 640px; height: auto; margin: 8px auto 0">
+
+<a class="btn" href="#ofertas">Quero meu calendário</a>
+
+<div class="orn" style="margin-top: 26px" aria-hidden="true"><i></i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"></path></svg><i></i></div>
+
+<div class="narrow" style="display: flex; flex-direction: column; gap: 22px; text-align: left; width: 100%">
+<h2 class="h2" style="font-size: clamp(28px, 4vw, 40px)">Quem ama Nossa Senhora sabe: é nos detalhes que a fé aparece.</h2>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div class="icon-row"><div class="icon-dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"></path></svg></div><p style="margin: 0; font-size: 17px; line-height: 1.5; padding-top: 10px">Ter uma imagem de Maria sempre à vista, para olhar e se lembrar dela.</p></div>
+<div class="icon-row"><div class="icon-dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"></path></svg></div><p style="margin: 0; font-size: 17px; line-height: 1.5; padding-top: 10px">Lembrar no dia certo das festas e datas importantes da fé católica.</p></div>
+<div class="icon-row"><div class="icon-dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H3z"></path><path d="M21 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z"></path></svg></div><p style="margin: 0; font-size: 17px; line-height: 1.5; padding-top: 10px">Fazer pequenas pausas para rezar e entregar suas intenções a Nossa Senhora.</p></div>
+<div class="icon-row"><div class="icon-dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"></path><path d="M5 10v10h14V10"></path></svg></div><p style="margin: 0; font-size: 17px; line-height: 1.5; padding-top: 10px">Dedicar um cantinho da casa à devoção, bonito e cheio de significado.</p></div>
+<div class="icon-row"><div class="icon-dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M6 18l2.5-2.5M15.5 8.5L18 6"></path></svg></div><p style="margin: 0; font-size: 17px; line-height: 1.5; padding-top: 10px">Começar o ano novo cercada de fé, beleza e carinho.</p></div>
+</div>
+<p class="lead">O <b>Calendário de Maria 2027</b> nasceu desses gestos simples de amor. É um jeito delicado de deixar a fé à vista, em todos os dias do ano.</p>
+</div>
+</div>
+</section>
+
+<!-- SEÇÃO 2 · PÁGINAS -->
+<section style="padding: 80px 0; background: #F2ECE0">
+<div class="wrap" style="display: flex; flex-direction: column; align-items: center; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 14px; align-items: center; max-width: 760px">
+<div class="eyebrow">Por dentro do calendário</div>
+<h2 class="h2">Todo mês, uma nova invocação de Maria acompanhando seus dias</h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center; align-items: flex-start; width: 100%">
+<figure style="margin: 0; display: flex; flex-direction: column; align-items: center; gap: 14px; flex: 1 1 260px; max-width: 320px">
+<img class="p3d p3d-l" src="imagens/outubro-calendario.webp" alt="Página de outubro de 2027 com Nossa Senhora Aparecida" style="display: block; width: 100%; height: auto">
+<figcaption style="font-size: 15px; font-weight: 700; color: #1F3A5F">Página do mês</figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; align-items: center; gap: 14px; flex: 1 1 260px; max-width: 320px">
+<img class="p3d p3d-c" src="imagens/outubro-devocional.webp" alt="Página devocional de outubro com oração, intenções e gratidão" style="display: block; width: 100%; height: auto">
+<figcaption style="font-size: 15px; font-weight: 700; color: #1F3A5F">Página devocional do mês</figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; align-items: center; gap: 14px; flex: 1 1 260px; max-width: 320px">
+<img class="p3d p3d-r" src="imagens/janeiro-calendario.webp" alt="Página de janeiro de 2027 com Santa Maria, Mãe de Deus" style="display: block; width: 100%; height: auto">
+<figcaption style="font-size: 15px; font-weight: 700; color: #1F3A5F">Cada mês, uma invocação diferente</figcaption>
+</figure>
+</div>
+<div style="display: flex; justify-content: center"><a class="btn" href="#ofertas">Quero meu calendário</a></div>
+</div>
+</section>
+
+<!-- SEÇÃO 3 · O QUE VEM -->
+<section style="padding: 80px 0; background: #FBF7EF">
+<div class="wrap narrow" style="display: flex; flex-direction: column; gap: 28px">
+<h2 class="h2">O que você recebe no Calendário de Maria 2027</h2>
+<div style="display: flex; flex-direction: column; gap: 18px">
+<div class="check"><div class="check-ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"></path></svg></div><p class="lead"><b>12 páginas mensais ilustradas</b>: uma composição dedicada a Nossa Senhora para cada mês do ano.</p></div>
+<div class="check"><div class="check-ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"></path></svg></div><p class="lead"><b>12 páginas devocionais</b>: oração do mês, uma palavra para guardar e pequenos gestos de fé.</p></div>
+<div class="check"><div class="check-ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"></path></svg></div><p class="lead"><b>Guia das festas marianas de 2027</b>: as datas especiais e o significado de cada uma.</p></div>
+<div class="check"><div class="check-ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"></path></svg></div><p class="lead"><b>Caderno de intenções e gratidão</b>: um espaço pessoal para pedidos, agradecimentos e orações pela família.</p></div>
+<div class="check"><div class="check-ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"></path></svg></div><p class="lead"><b>Arquivos em PDF prontos para imprimir</b>: para o oratório, a parede, a mesa ou onde você quiser.</p></div>
+</div>
+<p class="lead" style="text-align: center; font-family: 'Cormorant Garamond', serif; font-size: 24px; font-style: italic; color: #1F3A5F">Mais do que marcar os dias, é um convite para vivê-los com fé.</p>
+<div style="display: flex; justify-content: center"><a class="btn" href="#ofertas">Quero viver 2027 com Maria</a></div>
+</div>
+</section>
+
+<!-- SEÇÃO 4 · PARA QUEM É -->
+<section style="padding: 80px 0; background: #F2ECE0">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 14px; align-items: center">
+<div class="eyebrow">Para quem é</div>
+<h2 class="h2">Feito para corações devotos</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 20px">
+<div class="card">
+<div class="card-art"><svg viewBox="0 0 120 140" width="100" height="117" aria-hidden="true"><circle cx="60" cy="46" r="34" fill="#F6E7C9"></circle><circle cx="60" cy="46" r="34" fill="none" stroke="#B08A3E" stroke-width="1.5"></circle><path d="M60 16 C38 16 28 40 28 62 L18 136 L102 136 L92 62 C92 40 82 16 60 16 Z" fill="#5E7FA3"></path><path d="M44 72 Q60 64 76 72 L82 136 L38 136 Z" fill="#F7EFE6"></path><ellipse cx="60" cy="48" rx="18" ry="22" fill="#FBF3EA"></ellipse><ellipse cx="60" cy="49" rx="13" ry="16" fill="#F0D3BF"></ellipse><path d="M54 50 Q56 52 58 50 M62 50 Q64 52 66 50" stroke="#8A6A5C" stroke-width="1" fill="none"></path><path d="M57 57 Q60 59 63 57" stroke="#B5766A" stroke-width="1" fill="none"></path><path d="M55 104 L60 88 L65 104 Z" fill="#F0D3BF"></path><circle cx="30" cy="128" r="6" fill="#D99AA5"></circle><circle cx="90" cy="128" r="6" fill="#D99AA5"></circle></svg></div>
+<h3>Para quem ama Nossa Senhora</h3>
+<p>E quer ver sua devoção representada com delicadeza dentro de casa.</p>
+</div>
+<div class="card">
+<div class="card-art"><svg viewBox="0 0 160 120" width="150" height="113" aria-hidden="true"><ellipse cx="80" cy="46" rx="44" ry="32" fill="none" stroke="#B08A3E" stroke-width="6" stroke-dasharray="0.1 10" stroke-linecap="round"></ellipse><path d="M80 78 L80 96" stroke="#B08A3E" stroke-width="2"></path><path d="M80 94 L80 116 M71 102 L89 102" stroke="#1F3A5F" stroke-width="4" stroke-linecap="round"></path><circle cx="80" cy="78" r="5" fill="#1F3A5F"></circle></svg></div>
+<h3>Para quem quer viver 2027 com mais fé</h3>
+<p>E gosta de encontrar pequenos convites para a oração no meio da rotina.</p>
+</div>
+<div class="card">
+<div class="card-art"><svg viewBox="0 0 160 120" width="150" height="113" aria-hidden="true"><path d="M30 58 L80 20 L130 58" fill="none" stroke="#1F3A5F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M42 52 V108 H118 V52" fill="#FFFDF9" stroke="#1F3A5F" stroke-width="4" stroke-linejoin="round"></path><path d="M80 94 C80 94 62 83 62 71 A9 9 0 0 1 80 66 A9 9 0 0 1 98 71 C98 83 80 94 80 94 Z" fill="#D99AA5"></path></svg></div>
+<h3>Para mulheres e famílias católicas</h3>
+<p>Que querem lembrar as celebrações da Igreja e registrar suas intenções ao longo do ano.</p>
+</div>
+<div class="card">
+<div class="card-art"><svg viewBox="0 0 160 120" width="150" height="113" aria-hidden="true"><rect x="38" y="22" width="70" height="90" rx="3" fill="#EADFCB" transform="rotate(-8 73 67)"></rect><rect x="52" y="16" width="70" height="90" rx="3" fill="#F7EFE6" stroke="#D8C08A" transform="rotate(4 87 61)"></rect><rect x="46" y="14" width="70" height="92" rx="3" fill="#FFFDF9" stroke="#B08A3E" stroke-width="1.5"></rect><rect x="56" y="26" width="50" height="6" rx="2" fill="#1F3A5F"></rect><circle cx="81" cy="50" r="12" fill="#F6E7C9" stroke="#B08A3E"></circle><path d="M56 70 H106 M56 78 H106 M56 86 H106 M56 94 H106" stroke="#D8C08A"></path><path d="M66 70 V96 M76 70 V96 M86 70 V96 M96 70 V96" stroke="#EADFCB"></path></svg></div>
+<h3>Para quem ama materiais católicos bonitos</h3>
+<p>E quer uma coleção especial, útil e imprimível para acompanhar o ano inteiro.</p>
+</div>
+</div>
+<div style="display: flex; justify-content: center"><a class="btn" href="#ofertas">Esse calendário é para mim</a></div>
+</div>
+</section>
+
+<!-- SEÇÃO 5 · LEMBRANÇA -->
+<section style="padding: 80px 0; background: #FBF7EF">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 32px; align-items: center">
+<h2 class="h2" style="max-width: 760px">Uma lembrança de Maria presente nos seus dias</h2>
+<figure style="margin: 0; width: 100%; max-width: 820px; display: flex; flex-direction: column; gap: 10px">
+<img class="viva" src="imagens/calendario-na-mesa.webp" alt="Calendário de mesa ao lado de uma Bíblia, um terço, uma vela e rosas" style="display: block; width: 100%; height: auto; border-radius: 24px">
+<figcaption class="small">Imagem ilustrativa: o calendário é enviado em PDF para você imprimir e montar em casa.</figcaption>
+</figure>
+<div class="narrow" style="display: flex; flex-direction: column; gap: 18px">
+<p class="lead">Algumas coisas simples deixam o lar ainda mais especial. Uma imagem de Nossa Senhora. O terço guardado perto da Bíblia. Uma oração em silêncio antes de o dia começar.</p>
+<p class="lead">São gestos pequenos de uma fé que mora no coração, e o Calendário de Maria 2027 foi feito para fazer parte deles.</p>
+<p class="lead">A cada mês, uma nova imagem para contemplar e um convite para lembrar o cuidado de Mãe e confiar suas intenções a Deus.</p>
+<p class="lead" style="font-family: 'Cormorant Garamond', serif; font-size: 24px; font-style: italic; color: #1F3A5F; text-align: center">Porque a devoção também mora nos detalhes da rotina.</p>
+</div>
+<div style="display: flex; justify-content: center"><a class="btn" href="#ofertas">Quero levar Maria para casa</a></div>
+</div>
+</section>
+
+<!-- SEÇÃO 6 · BÔNUS -->
+<section style="padding: 80px 0; background: #F2ECE0">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 14px; align-items: center">
+<div class="eyebrow">Plano Completo</div>
+<h2 class="h2">Garanta hoje e receba também</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 22px">
+
+<div class="card">
+<div class="card-art" style="padding: 0; overflow: hidden"><img class="viva" src="imagens/bonus-1-cartoes.webp" alt="Cartões de oração com Maria espalhados sobre a mesa" style="display: block; width: 100%; height: auto"></div>
+<span class="bonus-tag">Bônus 1</span>
+<h3>50 cartões de oração com Maria</h3>
+<p>Orações, mensagens de fé e intenções para vários momentos da vida. Imprima, recorte e guarde na Bíblia, na bolsa ou dê de presente a alguém especial.</p>
+</div>
+
+<div class="card">
+<div class="card-art" style="padding: 0; overflow: hidden"><img class="viva" src="imagens/bonus-2-preparando-2027.webp" alt="Páginas do caderno Preparando 2027 com Maria" style="display: block; width: 100%; height: auto"></div>
+<span class="bonus-tag">Bônus 2</span>
+<h3>Preparando 2027 com Maria</h3>
+<p>Seu ano novo com Maria começa antes de janeiro. Páginas de gratidão por 2026, intenções e propósitos espirituais, e uma oração para entregar o novo ano a Deus pelas mãos de Nossa Senhora. <b>Dá para usar já, antes da virada.</b></p>
+</div>
+
+<div class="card">
+<div class="card-art" style="padding: 0; overflow: hidden"><img class="viva" src="imagens/bonus-3-versao-economica.webp" alt="Comparação entre a versão ilustrada e a versão econômica" style="display: block; width: 100%; height: auto"></div>
+<span class="bonus-tag">Bônus 3</span>
+<h3>Versão econômica para impressão</h3>
+<p>Uma versão mais leve, com menos cor, para imprimir o calendário em casa gastando bem menos tinta.</p>
+</div>
+
+<div class="card">
+<div class="card-art" style="padding: 0; overflow: hidden"><img class="viva" src="imagens/bonus-4-comunidade.webp" alt="Celular mostrando a comunidade Ponto da Fé no WhatsApp" style="display: block; width: 100%; height: auto"></div>
+<span class="bonus-tag">Bônus 4</span>
+<h3>Comunidade Ponto da Fé</h3>
+<p>Um cantinho para partilhar a fé ao lado de outras pessoas que amam Nossa Senhora, com mensagens, orações, reflexões e inspiração para o dia a dia.</p>
+</div>
+
+</div>
+<div style="display: flex; justify-content: center"><a class="btn" href="#ofertas">Quero o calendário com os bônus</a></div>
+</div>
+</section>
+
+<!-- SEÇÃO 7 · DEPOIMENTOS -->
+<section style="padding: 80px 0; background: #FBF7EF">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 12px; align-items: center">
+<h2 class="h2">O que dizem sobre os nossos materiais</h2>
+<p class="small" style="margin: 0">Mensagens de clientes que já receberam materiais da Ponto da Fé</p>
+</div>
+<div style="columns: 3 260px; column-gap: 18px">
+<img src="imagens/depoimento-1.jpg" alt="Cliente elogia os materiais e agradece pela inspiração" style="display: block; width: 100%; margin: 0 0 18px; border-radius: 16px; break-inside: avoid; box-shadow: 0 10px 24px rgba(46,35,38,.14)">
+<img src="imagens/depoimento-2.jpg" alt="Cliente conta que vai imprimir o material" style="display: block; width: 100%; margin: 0 0 18px; border-radius: 16px; break-inside: avoid; box-shadow: 0 10px 24px rgba(46,35,38,.14)">
+<img src="imagens/depoimento-3.jpg" alt="Comentário: recebi hoje o material, já estou imprimindo, maravilhoso" style="display: block; width: 100%; margin: 0 0 18px; border-radius: 16px; break-inside: avoid; box-shadow: 0 10px 24px rgba(46,35,38,.14)">
+<img src="imagens/depoimento-4.jpg" alt="Comentários de clientes: é maravilhoso, vale a pena" style="display: block; width: 100%; margin: 0 0 18px; border-radius: 16px; break-inside: avoid; box-shadow: 0 10px 24px rgba(46,35,38,.14)">
+<img src="imagens/depoimento-5.jpg" alt="Cliente: muito grata, kit maravilhoso e completo" style="display: block; width: 100%; margin: 0 0 18px; border-radius: 16px; break-inside: avoid; box-shadow: 0 10px 24px rgba(46,35,38,.14)">
+</div>
+<div class="narrow" style="background: #FFFDF9; border: 1px solid #EADFCB; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<div class="eyebrow">Uma palavra de quem fez</div>
+<p class="lead">Criei o Calendário de Maria 2027 porque percebi como a correria do dia a dia faz a gente esquecer de parar, rezar e lembrar de quem sempre cuida de nós. Quis fazer algo bonito, que ficasse à vista em casa e transformasse cada mês num pequeno encontro com Nossa Senhora. Meu desejo é que, ao virar cada página, você sinta o colo de Mãe e entregue a ela as suas intenções e a sua família. Que 2027 seja, para você, um ano inteiro vivido sob o manto de Maria.</p>
+<div style="font-family: 'Pinyon Script', cursive; font-size: 28px; color: #1F3A5F">Bruno Lima</div>
+</div>
+<div style="display: flex; justify-content: center"><a class="btn" href="#ofertas">Quero fazer parte</a></div>
+</div>
+</section>
+
+<!-- SEÇÃO 8 · OFERTAS -->
+<section id="ofertas" style="padding: 80px 0 64px; background: #F2ECE0">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 30px; align-items: center">
+<h2 class="h2">Escolha a melhor opção para você</h2>
+<div id="promo-ativa">
+<div style="display: flex; flex-direction: column; gap: 12px; align-items: center; text-align: center">
+<p style="margin: 0; font-weight: 800; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: #1F3A5F">Preço de lançamento válido até <span class="prazo-texto">30 de novembro</span></p>
+<div class="cd" role="timer" aria-label="Tempo restante do preço de lançamento">
+<div><b><span id="cd-dias">00</span></b><span>dias</span></div>
+<div><b><span id="cd-horas">00</span></b><span>horas</span></div>
+<div><b><span id="cd-mins">00</span></b><span>min</span></div>
+<div><b><span id="cd-segs">00</span></b><span>seg</span></div>
+</div>
+</div>
+</div>
+<div id="promo-encerrada" hidden>
+<p style="margin: 0; font-weight: 800; font-size: 15px; color: #1F3A5F; text-align: center">O preço de lançamento terminou em <span class="prazo-texto">30 de novembro</span>.</p>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(290px, 100%), 1fr)); gap: 28px; width: 100%; max-width: 900px; align-items: start; margin-top: 10px">
+
+<div class="plan">
+<div><h3>Plano Básico</h3><p style="margin: 6px 0 0; color: #5B6170">Só o calendário</p></div>
+<ul>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5E7563" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"></path></svg>12 páginas mensais ilustradas</li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5E7563" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"></path></svg>12 páginas devocionais com Maria</li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5E7563" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"></path></svg>Caderno de intenções e gratidão</li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5E7563" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"></path></svg>Guia das festas marianas de 2027</li>
+</ul>
+<div><div class="old">de R$ 37,90 por</div><div class="price">R$ 19,90</div><div style="font-size: 15px; color: #5B6170; margin-top: 6px">ou parcelado no cartão</div></div>
+<span class="save">Você economiza R$ 18,00</span>
+<a class="btn" href="https://pay.kiwify.com.br/8qXFYx7">Quero o Plano Básico</a>
+<p class="small" style="margin: 0">Acesso imediato · 7 dias de garantia</p>
+</div>
+
+<div class="plan top">
+<span class="badge">Recomendado</span>
+<div><h3>Plano Completo</h3><p style="margin: 6px 0 0; color: #5B6170">Tudo do Básico + 4 bônus</p></div>
+<ul>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5E7563" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"></path></svg>12 páginas mensais ilustradas</li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5E7563" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"></path></svg>12 páginas devocionais com Maria</li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5E7563" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"></path></svg>Caderno de intenções e gratidão</li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5E7563" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"></path></svg>Guia das festas marianas de 2027</li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B08A3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16v9H4z"></path><path d="M3 7h18v4H3z"></path><path d="M12 7v13"></path></svg><span><b>Bônus 1:</b> 50 cartões de oração com Maria</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B08A3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16v9H4z"></path><path d="M3 7h18v4H3z"></path><path d="M12 7v13"></path></svg><span><b>Bônus 2:</b> Preparando 2027 com Maria</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B08A3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16v9H4z"></path><path d="M3 7h18v4H3z"></path><path d="M12 7v13"></path></svg><span><b>Bônus 3:</b> Versão econômica para impressão</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B08A3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16v9H4z"></path><path d="M3 7h18v4H3z"></path><path d="M12 7v13"></path></svg><span><b>Bônus 4:</b> Comunidade Ponto da Fé</span></li>
+</ul>
+<div><div class="old">de R$ 67,90 por</div><div class="price">R$ 27,90</div><div style="font-size: 15px; color: #5B6170; margin-top: 6px">ou parcelado no cartão</div></div>
+<span class="save">Você economiza R$ 40,00</span>
+<a class="btn" href="https://pay.kiwify.com.br/cs4Cybm">Quero o Plano Completo</a>
+<p class="small" style="margin: 0">Acesso imediato · 7 dias de garantia</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- SEÇÃO 9 · GARANTIA -->
+<section style="padding: 64px 0; background: #FBF7EF">
+<div class="wrap narrow" style="display: flex; flex-wrap: wrap; gap: 28px; align-items: center; justify-content: center">
+<div style="width: 132px; height: 132px; border-radius: 50%; border: 3px double #B08A3E; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #FFFDF9; flex: none">
+<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#1F3A5F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"></path><path d="M8.5 12l2.5 2.5 4.5-5"></path></svg>
+<div style="font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 30px; line-height: 1; color: #1F3A5F">7 dias</div>
+<div style="font-size: 11px; font-weight: 800; letter-spacing: .12em; color: #7A5A23">DE GARANTIA</div>
+</div>
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 10px">
+<h2 class="h2" style="text-align: left; font-size: clamp(28px, 3.6vw, 36px)">Sua compra é protegida</h2>
+<p class="lead">Conheça o Calendário de Maria 2027 com calma. Se ele não for o que você esperava, peça o reembolso em até 7 dias pelo [seu e-mail ou WhatsApp de suporte]. Sem perguntas e sem burocracia.</p>
+</div>
+<div style="flex: 1 1 100%; display: flex; justify-content: center"><a class="btn" href="#ofertas">Garantir com segurança</a></div>
+</div>
+</section>
+
+<!-- AVISO E RODAPÉ -->
+<footer style="padding: 48px 0 56px; background: #14233A; color: #E8EDF4">
+<div class="wrap narrow" style="display: flex; flex-direction: column; gap: 14px">
+<p style="margin: 0; font-weight: 800; font-size: 14px; letter-spacing: .12em; text-transform: uppercase; color: #E4C98F">Aviso de direitos autorais</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.6">Todo o conteúdo deste material (textos, ilustrações, estrutura e organização) é protegido pela Lei de Direitos Autorais, nº 9.610/98. Copiar, revender ou compartilhar sem autorização é proibido.</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.6">Cada página foi feita com estudo, oração e carinho pela espiritualidade católica. Obrigada por respeitar e valorizar este trabalho.</p>
+<p style="margin: 10px 0 0; font-size: 13px; color: #B9C3D2">Produto digital em PDF para imprimir. Nenhum item físico é enviado. © 2026 [Sua marca]</p>
+</div>
+</footer>
+
+</div>
+<script>
+// Data e hora final do preço de lançamento (horário de Brasília/Fortaleza).
+// Para mudar a promoção, altere só esta linha:
+var PRAZO = '2026-11-30T23:59:59-03:00';
+
+(function () {
+  var fim = new Date(PRAZO);
+  var tz = { timeZone: 'America/Fortaleza' };
+  var dia = function (d) { return d.toLocaleDateString('pt-BR', tz); };
+  var texto = fim.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', timeZone: 'America/Fortaleza' });
+  document.querySelectorAll('.prazo-texto').forEach(function (el) { el.textContent = texto; });
+  var pad = function (n) { return String(n).padStart(2, '0'); };
+  function atualizar() {
+    var diff = fim.getTime() - Date.now();
+    var s = Math.max(0, Math.floor(diff / 1000));
+    var faixa = document.getElementById('faixa');
+    if (diff <= 0) {
+      faixa.textContent = 'Garanta o seu Calendário de Maria 2027';
+      document.getElementById('promo-ativa').hidden = true;
+      document.getElementById('promo-encerrada').hidden = false;
+      return;
+    }
+    faixa.textContent = dia(new Date()) === dia(fim)
+      ? '⚡ Oferta especial disponível apenas hoje'
+      : '⚡ Oferta especial disponível até ' + texto;
+    document.getElementById('cd-dias').textContent = pad(Math.floor(s / 86400));
+    document.getElementById('cd-horas').textContent = pad(Math.floor((s % 86400) / 3600));
+    document.getElementById('cd-mins').textContent = pad(Math.floor((s % 3600) / 60));
+    document.getElementById('cd-segs').textContent = pad(s % 60);
+  }
+  atualizar();
+  setInterval(atualizar, 1000);
+})();
+</script>
+</body>
+</html>
