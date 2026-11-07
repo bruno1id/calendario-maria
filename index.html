@@ -432,7 +432,7 @@ var PRAZO = '2026-11-30T23:59:59-03:00';
 </script>
 <script>
 // Meta Pixel: registra InitiateCheckout ao clicar nos botões de pagamento
-document.querySelectorAll('a[href*="pay.kiwify.com.br"], a[href*="pay.cakto.com.br"]').forEach(function (a) {
+document.querySelectorAll('a[href*="pay.cakto.com.br"]').forEach(function (a) {
   a.addEventListener('click', function () {
     if (window.fbq) fbq('track', 'InitiateCheckout', {
       value: a.href.indexOf('32tyeb6_1293043') > -1 ? 27.90 : 19.90,
